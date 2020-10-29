@@ -1,0 +1,64 @@
+:root {
+  --grid-cols: 1;
+  --grid-rows: 1;
+}
+
+#container {
+  display: grid;
+  width: 975px;
+  grid-gap: 0;
+  border: 10px solid #FE544A;
+  grid-template-rows: repeat(var(--grid-rows), 15px);
+  grid-template-columns: repeat(var(--grid-cols), 15px);
+}
+
+.play-area {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 110px 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "."
+    ".";
+}
+
+.grid-container {
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.grid-item {
+  width: 975px;
+  height: 100px;
+  text-align: center;
+  border: 10px solid   #FE544A;
+  background-color: blue;
+}
+
+.board-item {
+  border: 0px solid #ddd;
+  text-align: center;
+  background-color: blue;
+}
+
+.message {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Arial;
+  color:yellow;
+}
+
+.instructions {
+  font-size: 15px;
+  font-family: Arial;
+  color:white;
+  padding: 5px;
+}
+
+.gameover {
+  font-size: 20px;
+  font-family: Arial;
+  color: orangered;
+}
